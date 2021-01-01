@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
-import Header from './Header'
-import '../Styling/Home.css'
-import Filters from './Filters'
+import '../Styling/Home.css';
+import Header from './Header';
+import Filters from './Filters';
+import Circles from './Circles';
 
 class Home extends Component {
     constructor() {
@@ -25,15 +26,8 @@ class Home extends Component {
             <div>
                 <Header />
                 <Filters />
-                <h1>This is Home Page</h1>
-
-                <MDBContainer>
-  <MDBRow>
-    <MDBCol md="4">.col-md-4</MDBCol>
-    <MDBCol md="4">.col-md-4</MDBCol>
-    <MDBCol md="4">.col-md-4</MDBCol>
-  </MDBRow>
-</MDBContainer>
+                <Circles />
+                
             </div>
         )
     }

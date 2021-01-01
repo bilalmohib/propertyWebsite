@@ -1,0 +1,25 @@
+.title{
+    color: rgb(13, 99, 201);
+    margin: 8%;
+}
+.disc
+{
+    font-size: 15px;
+    color: #515b6d;
+}
+.img
+{
+    margin-top: 5%;
+}
+.button{
+    border: 1px solid #0d63c9;
+    border-radius: 0%;
+    color: #0d63c9;
+    font-weight: light;
+}
+.button:hover{
+    border-radius: 0%;
+    background-color: #0d63c9;
+    color: white;
+    font-weight: lighter;
+}
