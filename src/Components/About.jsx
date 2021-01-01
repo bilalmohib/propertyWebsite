@@ -9,8 +9,8 @@ const About = () => {
             <MDBContainer>
                 <MDBRow>
                     <MDBCol md="8">
-                        <h4 className="title">We're SA's number one property website</h4>
-                        <p>Property24.com is South Africa's largest property search portal and is the first place to start your property search!
+                        <h2 className="title">We're SA's number one property website</h2>
+                        <p className="para">Property24.com is South Africa's largest property search portal and is the first place to start your property search!
                         Property24.com lists houses, flats, vacant land and farms from all of SA's leading estate agents, so whether you're looking to buy or rent, you'll find your perfect home on Property24.com.
                         Find your dream home on Property24.com by searching through the largest database of private property for sale by estate agents throughout South Africa. To list your property on Property24.com contact one of our trusted Estate Agents.
                         </p>

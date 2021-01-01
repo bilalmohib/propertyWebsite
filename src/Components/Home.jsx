@@ -4,6 +4,7 @@ import '../Styling/Home.css';
 import Header from './Header';
 import Filters from './Filters';
 import Circles from './Circles';
+import About from './About';
 
 class Home extends Component {
     constructor() {
@@ -27,7 +28,7 @@ class Home extends Component {
                 <Header />
                 <Filters />
                 <Circles />
-                
+                <About />
             </div>
         )
     }
