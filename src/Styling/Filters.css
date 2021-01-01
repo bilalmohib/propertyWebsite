@@ -1,0 +1,126 @@
+#filters {
+    background-color: rgb(13, 99, 201);
+    height: auto;
+    max-width: 100vw;
+}
+
+#container {
+    padding-top: 2%;
+    padding-left: 14%;
+    color: white;
+    font-weight: lighter;
+}
+
+#heading {
+    color: white;
+    font-weight: lighter;
+}
+
+#list {
+    list-style: none;
+    display: flex;
+    margin-left: -5.5%;
+}
+
+#list li {
+    margin-left: 3%;
+    font-size: 15px;
+}
+
+#list li Link {}
+
+#searchInput {
+    background-color: white;
+    width: 60%;
+    display: flex;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#btnsearch {
+    background-color: rgb(240, 68, 50);
+    color: white;
+    border-radius: 2px;
+    width: 200px;
+}
+
+.col {
+    width: 150px;
+    background-color: rgb(86, 146, 217);
+    color: #cbdaee;
+    margin-top: -8%;
+    margin-left: 0%;
+}
+
+#ROW1DROPDOWN {
+    display: flex;
+    width: 150px;
+}
+
+#CollapseButton {
+    position: relative;
+    margin-top: 36%;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.paraRow {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#ROW1DROPDOWN {
+    width: 60%;
+    margin-top: 2%;
+}
+
+#ROW2DROPDOWN {
+    width: 60%;
+    margin-top: 2%;
+}
+
+#ROW3DROPDOWN {
+    width: 80%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+#titleContainer {
+    width: 55%;
+}
+
+#CollapseButtonMobile {
+    display: none;
+    font-size: 13px;
+    font-weight: lighter;
+}
+#btnsearchMobile
+{
+    display: none;
+}
+
+@media all and (max-width:1205px) {
+    #CollapseButton {
+        display: none;
+    }
+    #CollapseButtonMobile {
+        display: block;
+    }
+    #searchInput {
+        width: 90%;
+    }
+    #btnsearch {
+        display: none;
+    }
+    #btnsearchMobile 
+    {
+        background-color: rgb(240, 68, 50);
+        color: white;
+        border-radius: 2px;
+        width: 90%;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-weight: lighter;
+    }
+
+}
