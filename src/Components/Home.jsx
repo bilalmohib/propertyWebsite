@@ -5,12 +5,17 @@ import Header from './Header';
 import Filters from './Filters';
 import Circles from './Circles';
 import About from './About';
+import SaleinGauteng from './SaleinGauteng';
+import MobileApp from './MobileApp';
+import Articles from './Articles';
+import Index from './Index';
+import Footer from './Footer';
 
 class Home extends Component {
     constructor() {
         super()
         this.state = {
-            options: [{ name: 'Srigar', id: 2 }, { name: 'Sam', id: 2 }, { name: 'Sams', id: 3 }, { name: 'Samds', id: 4 }]
+    
         };
     }
     onSelect = (selectedList, selectedItem) => {
@@ -28,7 +33,14 @@ class Home extends Component {
                 <Header />
                 <Filters />
                 <Circles />
+                <SaleinGauteng/>
+                <MobileApp/>
+                <Articles/>
                 <About />
+                <Index />
+                <Footer/>
+                <br/>
+
             </div>
         )
     }

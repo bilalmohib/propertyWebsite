@@ -57,6 +57,69 @@
 
 
 
+
+ 
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(function() {
+        var colours = ['#0D63C9'];
+
+        var data = new google.visualization.DataTable({"cols":[{"id":"Year","label":"Year","type":"string","role":null},{"id":"AveragePropertyPrice","label":"Average Property Price","type":"number","role":null}],"rows":[{"c":[{"v":2016,"f":null},{"v":800000,"f":"R 800 000"}]},{"c":[{"v":2017,"f":null},{"v":820000,"f":"R 820 000"}]},{"c":[{"v":2018,"f":null},{"v":850000,"f":"R 850 000"}]},{"c":[{"v":2019,"f":null},{"v":880000,"f":"R 880 000"}]},{"c":[{"v":2020,"f":null},{"v":903500,"f":"R 903 500"}]}]}, false);
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, {
+            label: data.getColumnLabel(1),
+            type: 'number',
+            calc: function (dt, row) {
+                // reformat the data in millions
+                var vCalc = dt.getValue(row, 1);
+                if (vCalc != null) vCalc = vCalc / 1000000;
+
+                return {v: vCalc, f: dt.getFormattedValue(row, 1)};
+            }
+        }]);
+
+        var options = {
+            height: 200,
+            title: null,
+            backgroundColor: "transparent",
+            colors: colours,
+            legend: { position: "none" },
+            chartArea: { top: 20, left: 50, height: 128, width: '100%' },
+            hAxis: {
+                gridlines: {
+                    count: -1
+                },
+                maxAlternation: 1, // use a maximum of 1 line of labels
+                minTextSpacing: 4, // minimum spacing between adjacent labels, in pixels
+                slantedText: false,
+                textStyle: { fontSize: 10 }
+            },
+            vAxis: {
+                format: "R#.##m",
+                gridlines: {
+                    interval: [1, 1.25, 2.5, 5]
+                },
+                textStyle: { fontSize: 11 }
+            },
+            tooltip: { textStyle: { fontSize: 11 } }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('averagePropertyPriceGraph_Province_1'));
+        chart.draw(view, options);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

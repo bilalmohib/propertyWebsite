@@ -1,0 +1,41 @@
+.titleP {
+    color: rgb(13, 99, 201);
+    margin-left: 1.5%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.sub-heading {
+    color: rgb(13, 99, 201);
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    color: black;
+}
+
+.sub-heading ul li Link {
+    color: black;
+}
+
+#pfs {
+    padding-left: 4%;
+}
+
+#girafa {
+    max-width: 100%;
+}
+
+@media all and (max-width:765px) {
+    #girafa {
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width:570px) {
+    #pfs {
+        padding-left: 8%;
+    }
+}

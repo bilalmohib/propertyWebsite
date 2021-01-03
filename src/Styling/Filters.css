@@ -113,13 +113,14 @@
     }
     #btnsearchMobile 
     {
+        display: block;
         background-color: rgb(240, 68, 50);
         color: white;
         border-radius: 2px;
         width: 90%;
         font-size: 16px;
         border-radius: 5px;
-        margin-bottom: 20px;
+        
         font-weight: lighter;
     }
 

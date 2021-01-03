@@ -1,0 +1,55 @@
+#mobileTitle {
+    color: rgb(13, 99, 201);
+    text-align: left;
+    font-weight: lighter;
+    margin-bottom: 10%;
+}
+
+#pfsm {
+    padding-left: 5%;
+}
+
+.paraMobileTablet {
+    text-align: left;
+    font-family: Cambria;
+    color: rgb(85, 82, 82);
+    font-weight: sarif;
+}
+
+#btnApp {
+    border-radius: 2%;
+    margin-left: -50%;
+}
+
+@media all and (max-width:1105px) {
+    #btnApp {
+        margin-left: -40%;
+    }
+}
+#mobileAppPic
+{
+    max-width: 100%;
+}
+@media all and (max-width:992px) {
+    #btnApp {
+        margin-left: -20%;
+    }
+    #mobileAppPic
+    {
+        max-width: 100%;
+        margin-top: 20%;
+    }
+}
+
+@media all and (max-width:765px) {
+    #mobileAppPic
+    {
+        max-width: 100%;
+        margin-top: 5%;
+    }
+}
+@media all and (max-width:570px) {
+    #pfsm {
+        padding-left: 8%;
+    }
+}

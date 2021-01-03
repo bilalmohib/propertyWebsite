@@ -1,6 +1,7 @@
 .title{
     color: rgb(13, 99, 201);
     margin: 8%;
+    font-weight: bold;
 }
 .disc
 {
@@ -23,3 +24,4 @@
     color: white;
     font-weight: lighter;
 }
+

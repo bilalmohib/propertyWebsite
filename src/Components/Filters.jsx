@@ -197,6 +197,7 @@ class Filters extends Component {
                                                     onRemove={this.onRemove} // Function will trigger on remove event
                                                     displayValue="name" // Property name to display in the dropdown options
                                                     placeholder="Any"
+                                                    showCheckbox="true"
                                                 />
                                             </div>
                                         </MDBCol>
@@ -212,6 +213,7 @@ class Filters extends Component {
                                                     onRemove={this.onRemove} // Function will trigger on remove event
                                                     displayValue="name" // Property name to display in the dropdown options
                                                     placeholder="Any"
+                                                    showCheckbox="true"
                                                 />
                                             </div>
                                         </MDBCol>
@@ -227,6 +229,7 @@ class Filters extends Component {
                                                     onRemove={this.onRemove} // Function will trigger on remove event
                                                     displayValue="name" // Property name to display in the dropdown options
                                                     placeholder="Any"
+                                                    showCheckbox="true"
                                                 />
                                             </div>
                                         </MDBCol>
@@ -242,6 +245,7 @@ class Filters extends Component {
                                                     onRemove={this.onRemove} // Function will trigger on remove event
                                                     displayValue="name" // Property name to display in the dropdown options
                                                     placeholder="Any"
+                                                    showCheckbox="true"
                                                 />
                                             </div>
                                         </MDBCol>
@@ -296,6 +300,7 @@ class Filters extends Component {
                                                     onRemove={this.onRemove} // Function will trigger on remove event
                                                     displayValue="name" // Property name to display in the dropdown options
                                                     placeholder="Any"
+                                                    showCheckbox="true"
                                                 />
                                             </div>
                                         </MDBCol>
@@ -311,6 +316,7 @@ class Filters extends Component {
                                                     onRemove={this.onRemove} // Function will trigger on remove event
                                                     displayValue="name" // Property name to display in the dropdown options
                                                     placeholder="Any"
+                                                    showCheckbox="true"
                                                 />
                                             </div>
                                         </MDBCol>
@@ -326,6 +332,7 @@ class Filters extends Component {
                                                     onRemove={this.onRemove} // Function will trigger on remove event
                                                     displayValue="name" // Property name to display in the dropdown options
                                                     placeholder="Any"
+                                                    showCheckbox="true"
                                                 />
                                             </div>
                                         </MDBCol>
@@ -341,6 +348,7 @@ class Filters extends Component {
                                                     onRemove={this.onRemove} // Function will trigger on remove event
                                                     displayValue="name" // Property name to display in the dropdown options
                                                     placeholder="Any"
+                                                    showCheckbox="true"
                                                 />
                                             </div>
                                         </MDBCol>
@@ -363,28 +371,28 @@ class Filters extends Component {
                                                     {/* <!-- Material unchecked --> */}
                                                     <div class="form-check">
                                                         <input type="checkbox" className="form-check-input" id="Pet_Friendly" />
-                                                        <label className="form-check-label" for="Pet_Friendly">Pet Friendly</label>
+                                                        <label className="form-check-label" htmlFor="Pet_Friendly">Pet Friendly</label>
                                                     </div>
                                                 </MDBCol>
                                                 <MDBCol lg="5">
                                                     {/* <!-- Material unchecked --> */}
                                                     <div class="form-check">
                                                         <input type="checkbox" className="form-check-input" id="Garden" />
-                                                        <label className="form-check-label" for="Garden">Garden</label>
+                                                        <label className="form-check-label" htmlFor="Garden">Garden</label>
                                                     </div>
                                                 </MDBCol>
                                                 <MDBCol lg="5">
                                                     {/* <!-- Material unchecked --> */}
                                                     <div class="form-check">
                                                         <input type="checkbox" className="form-check-input" id="Pool" />
-                                                        <label className="form-check-label" for="Pool">Pool</label>
+                                                        <label className="form-check-label" htmlFor="Pool">Pool</label>
                                                     </div>
                                                 </MDBCol>
                                                 <MDBCol lg="5">
                                                     {/* <!-- Material unchecked --> */}
                                                     <div class="form-check">
                                                         <input type="checkbox" className="form-check-input" id="Flatlet" />
-                                                        <label className="form-check-label" for="Flatlet">Flatlet</label>
+                                                        <label className="form-check-label" htmlFor="Flatlet">Flatlet</label>
                                                     </div>
                                                 </MDBCol>
                                             </MDBRow>
@@ -397,28 +405,28 @@ class Filters extends Component {
                                                     {/* <!-- Material unchecked --> */}
                                                     <div class="form-check">
                                                         <input type="checkbox" className="form-check-input" id="Retirement" />
-                                                        <label className="form-check-label" for="Retirement">Retirement</label>
+                                                        <label className="form-check-label" htmlFor="Retirement">Retirement</label>
                                                     </div>
                                                 </MDBCol>
                                                 <MDBCol lg="5">
                                                     {/* <!-- Material unchecked --> */}
                                                     <div class="form-check">
                                                         <input type="checkbox" className="form-check-input" id="Repossessed" />
-                                                        <label className="form-check-label" for="Repossessed">Repossessed</label>
+                                                        <label className="form-check-label" htmlFor="Repossessed">Repossessed</label>
                                                     </div>
                                                 </MDBCol>
                                                 <MDBCol lg="5">
                                                     {/* <!-- Material unchecked --> */}
                                                     <div class="form-check">
                                                         <input type="checkbox" className="form-check-input" id="On Show" />
-                                                        <label className="form-check-label" for="On Show">On Show</label>
+                                                        <label className="form-check-label" htmlFor="On Show">On Show</label>
                                                     </div>
                                                 </MDBCol>
                                                 <MDBCol lg="5">
                                                     {/* <!-- Material unchecked --> */}
                                                     <div class="form-check">
                                                         <input type="checkbox" className="form-check-input" id="Auction" />
-                                                        <label className="form-check-label" for="Auction">Auction</label>
+                                                        <label className="form-check-label" htmlFor="Auction">Auction</label>
                                                     </div>
                                                 </MDBCol>
                                             </MDBRow>
@@ -430,6 +438,8 @@ class Filters extends Component {
                         </div>
 
                         <button id="btnsearchMobile" type="button" class="btn">Search</button>
+                    
+                   <br/>
 
                     </div>
                 </div>

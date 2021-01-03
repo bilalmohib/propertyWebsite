@@ -1,0 +1,83 @@
+#fIconsList {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2%;
+    padding-left: 50%;
+}
+
+.ficons {
+    font-size: 33px;
+    color: grey;
+    padding-left: 2%;
+}
+
+.ficons:hover {
+    color: rgb(86, 146, 217);
+}
+
+.ficonsMobile
+{
+    font-size: 40px;
+    color: grey;
+    padding-left: 2%;
+}
+.ficonsMobile:hover
+{
+    color: rgb(73, 73, 73);
+}
+
+#logoFooter {
+    padding-left: 13%;
+    font-size: 39px;
+    color: rgb(26, 107, 204);
+    font-weight: 900;
+}
+
+.fnav {
+    color: rgb(86, 146, 217);
+    font-size: 15px;
+    padding-left: 2%;
+}
+
+.fnav:hover {
+    text-decoration: underline;
+}
+
+#fnavBlock {
+    display: flex;
+    width: 100%;
+}
+
+#fmobileIconsList {
+    display: flex;
+    padding-left: 35%;
+}
+
+@media all and (max-width:576px) {
+    #fmobileIconsList {
+        padding-top: 5%;
+    }
+    #fmobileIconsListHeading {
+        position: absolute;
+        left: 4%;
+    }
+}
+
+@media all and (max-width:770px) {
+    #logoFooter {
+        padding-left: 1%;
+    }
+    #fIconsList {
+        padding-left: initial;
+    }
+    #fmobileIconsList {
+        padding-left: 0%;
+    }
+}
+
+@media all and (max-width:993px) {
+    #fnavBlock {
+        display: initial;
+        width: 100%;
+    }
+}

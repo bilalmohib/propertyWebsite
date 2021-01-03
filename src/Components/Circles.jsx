@@ -5,7 +5,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import '../Styling/Circles.css'
 let Circles = () => {
     return (
-        <div>
+      
             <MDBContainer>
                 <MDBRow>
                     <MDBCol md="4" sm="6">
@@ -35,8 +35,7 @@ let Circles = () => {
                 </MDBRow>
                 <hr/>
             </MDBContainer>
-            
-        </div>
+       
     )
 }
 export default Circles;
