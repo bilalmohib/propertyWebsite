@@ -182,7 +182,7 @@ class Filters extends Component {
                             {/* Row 1 of drop downs */}
                             <div id="ROW1DROPDOWN">
                                 <MDBContainer>
-                                    <MDBRow>
+                                    <MDBRow id="rowproperty1    " style={{marginLeft:"-3%"}}>
 
 
                                         <MDBCol lg="3" md="6" sm="6">
