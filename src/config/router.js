@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router
 
 import Home from '../Components/Home.jsx';
 import Search from '../Components/Search';
+import AdDetails from '../Components/AdDetails';
+import Admin from '../Components/Admin';
 
 class AppRouter extends React.Component {
     render() {
@@ -14,6 +16,12 @@ class AppRouter extends React.Component {
                    
                       <Route exact path="/search" component={Search} />
                       
+                      <Route exact path="/details" component={AdDetails} />  
+
+
+                      <Route exact path="/admin" component={Admin} />  
+
+
                   </Router>
 
         )

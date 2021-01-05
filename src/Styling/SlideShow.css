@@ -1,0 +1,38 @@
+#GreatBox
+{
+    background-color: rgb(134, 134, 134);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 2px grey;
+    width: 70%;
+    margin: 0 auto;
+}
+#carouselExampleIndicators
+{
+    margin: 0 auto;
+    width: 75%;
+    box-shadow: 5px 5px 8px grey;
+    border-radius: 10px 10px 10px 10px;
+}
+@media all and (max-width:1000px)
+{
+    #GreatBox
+    {
+        width: 100%;
+    }
+    #carouselExampleIndicators
+    {
+        width: 100%;
+    }
+}
+@media all and (max-width:600px)
+{
+    #GreatBox
+    {
+        width: 100%;
+    }
+    #carouselExampleIndicators
+    {
+        width: 100%;
+    }   
+}

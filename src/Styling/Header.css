@@ -1,71 +1,77 @@
-#logo 
-{
+#logo {
     padding-left: 13%;
     font-size: 39px;
     color: rgb(26, 107, 204);
     font-weight: 900;
 }
 
-#navbarSupportedContent{
-    padding-left: 5%;
-    width: 100%;
-
+#headerDropdownAlert {
+    margin-top: 10px;
+    margin-left: -900%;
 }
 
-#navbarDropdown1, #navbarDropdown2, #navbarDropdown3, #navbarDropdown4, #navbarDropdown5, #navbarDropdown6, #navbarDropdown7 
-{
+#navbarSupportedContent {
+    padding-left: 0%;
+    width: 100%;
+}
+
+#navbarDropdown1, #navbarDropdown2, #navbarDropdown3, #navbarDropdown4, #navbarDropdown5, #navbarDropdown6, #navbarDropdown7 {
     font-size: 13px;
     color: rgb(83, 83, 83);
 }
-#Log,#Sign{
+
+#Log, #Sign {
     margin-left: 10px;
     font-size: 14px;
     margin-top: 5px;
     color: rgb(102, 208, 251);
-    
-}	
-#Sign{
+}
+
+#Sign {
     margin-right: 20px;
 }
-#Log a,#Sign a{
+
+#Log a, #Sign a {
     text-decoration: none;
     color: inherit;
 }
-#Log:hover,#Sign:hover{
-    color:rgb(118, 214, 185);
+
+#Log:hover, #Sign:hover {
+    color: rgb(118, 214, 185);
 }
-.dropdown:hover>.dropdown-menu 
-{
+
+.dropdown:hover>.dropdown-menu {
     display: block;
 }
-#alertBtn{
-}
-#alert{
+
+#alertBtn {}
+
+#alert {
     height: 130px;
-    width: 380px;
+    max-width: 380px;
     box-shadow: 2px 2px 2px 2px grey;
     display: flex;
     flex-direction: column;
-
 }
+
 .dropdown>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
 
-
-#navbarDropdown7
-{
-    background-color: orange;   
+#navbarDropdown7 {
+    background-color: orange;
 }
 
-.nav-item .dropdown-menu .dropdown-item 
-{
+.nav-item .dropdown-menu .dropdown-item {}
 
-}
-
-.nav-item .dropdown-menu .dropdown-item:hover 
-{
+.nav-item .dropdown-menu .dropdown-item:hover {
     color: white;
     background-color: rgb(75, 195, 249);
+}
+
+@media all and (max-width:992px) {
+    #headerDropdownAlert {
+        margin-left: 0%;
+    }
 }

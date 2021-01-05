@@ -1,97 +1,120 @@
-#bigcard
-{
-    width: 45%;
+#bigcard {
+    width: 84%;
+    margin-left: 51%;
     border: 1px solid rgb(192, 218, 241);
     border-radius: 5px 5px 5px 5px;
     box-shadow: 1x 1px 1px 1px rgb(87, 86, 86);
 }
-#bigcard:hover{
+
+#bigcard:hover {
     box-shadow: 2px 2px 2px 2px grey;
 }
-#topimage{
+
+#topimage {
     height: 50px;
 }
-.leftrow{
+
+.leftrow {
     margin-bottom: 0.5%;
     padding-right: 0%;
     border-radius: 3px 3px 3px 3px;
 }
-#rightimage{
+
+#rightimage {
     width: 104.5%;
     /* margin-left: 0%; */
     border-radius: 3px 3px 3px 3px;
 }
-#heart
-{
+
+#heart {
     text-align: right;
     font-size: 30px;
     color: grey;
     /* border: 1px solid rgb(66, 66, 66); */
 }
-#heart:hover{
+
+#heart:hover {
     color: rgb(201, 30, 30);
     text-shadow: 2px 2px 2px grey;
 }
-#title{
+
+#title {
     padding-top: 3%;
     font-size: 14px;
     font-weight: lighter;
 }
-#price
-{
+
+#price {
     color: #0b63c9;
     padding-top: 3%;
     padding-left: 2%;
 }
-#street{
+
+#street {
     text-align: right;
 }
-.things
-{
+
+.things {
     font-size: 20px;
 }
-.thingsText
-{
+
+.thingsText {
     font-size: 10px;
 }
-@media all and (max-width:960px)
-{
-    #bigcard
-    {
-        width: 80%;
-    }
-    #rightimage
-    {
-        width: 100%;
-    }
-    .leftrow
-    {
-        width: 98%;
-        margin-top: 2%;
-        height: 200px;
-    }
 
-}
-@media all and (max-width:760)
-{
-    #thigsRow
-    {
-        margin-top: -20%;
+@media all and (max-width:1325px) {
+    #bigcard {
+        width: 45%;
+        margin-left: auto;
     }
 }
-@media all and (max-width:490px)
-{
-    .leftrow
-    {
-        width: 96%;
-        margin-top: 2%;
-        height: 150px;
+    @media all and (max-width:960px) {
+        #bigcard {
+            width: 50%;
+        }
+        #rightimage {
+            width: 100%;
+        }
+        .leftrow {
+            width: 98%;
+            margin-top: 2%;
+            height: 200px;
+        }
     }
-}
-@media all and (max-width:300px)
-{
-    #bigcard
-    {
-        width: 90%;
+    @media all and (max-width:856px) {
+        #bigcard {
+            width: 55%;
+        }
     }
-}
+    @media all and (max-width:578px) {
+        #bigcard {
+            width: 60%;
+        }
+    }
+    @media all and (max-width:456px) {
+        #bigcard {
+            width: 70%;
+        }
+    }
+    @media all and (max-width:350px) {
+        #bigcard {
+            width: 80%;
+        }
+    }
+    @media all and (max-width:760) {
+        #thigsRow {
+            margin-top: -20%;
+        }
+    }
+    @media all and (max-width:490px) {
+        .leftrow {
+            width: 96%;
+            margin-top: 2%;
+            height: 150px;
+        }
+    }
+    @media all and (max-width:300px) {
+        #bigcard {
+            width: 90%;
+        }
+    }

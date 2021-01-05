@@ -1,0 +1,93 @@
+#divArticles {
+    width: 230px;
+    height: fit-content;
+    margin-left: 20%;
+}
+#divArticlesInside
+{
+    border: 1px solid #f2994a;
+    width: 200px;
+    height: 270px;
+    /* margin-left: 20%; */
+}
+#searchblock {
+    display: flex;
+    width: 100%;
+    margin-left: -10%;
+    /* margin: auto; */
+}
+.sbi
+{
+    text-decoration: none;
+    color:rgb(61, 60, 60);
+    font-size: 14px;
+    padding-left: 1%;
+}
+.sbi:hover
+{
+    color: #0d63c9;
+    text-decoration: underline;
+}
+#titlesideAd {
+    padding: 10% 10% 0%;
+    font-size: 30px;
+    color: rgb(26, 107, 204);
+    font-weight: 900;
+}
+
+#SubTitlesideAd {
+    padding: 0% 10% 0%;
+    font-size: 27px;
+    color: rgb(26, 107, 204);
+    font-weight: 900;
+}
+
+.paraArticles {
+    text-align: center;
+    font-size: 13px;
+}
+
+.btnArticles {
+    border-radius: 1px 1px 1px 1px;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    width: 87%;
+    background-color: #f2994a;
+    color: white;
+}
+
+.btnArticles:hover {
+    color: aliceblue;
+}
+
+.btnArticles2 {
+    border-radius: 1px 1px 1px 1px;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    width: 87%;
+    color: #f2994a;
+    border: 1px solid #f2994a;
+    background-color: white;
+}
+
+#smallCardBlock {
+    margin-left: -20%;
+}
+
+@media all and (max-width:1325px) {
+    #divArticles {
+        display: none;
+    }
+    #searchblock {
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    #smallCardBlock {
+        margin: auto;
+    }
+}

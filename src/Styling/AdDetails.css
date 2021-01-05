@@ -1,0 +1,295 @@
+#topNav {
+    background-color: rgb(13, 99, 201);
+    color: white;
+}
+
+#topNavText {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 13px;
+    font-weight: lighter;
+    /* border: 1px solid black; */
+}
+
+.history {
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    text-decoration: none;
+}
+
+.history:hover {
+    color: aliceblue;
+}
+
+/* Here is the actual adDetails component styling starting */
+
+.titleColumn {
+    /* border: 1px solid grey; */
+    /* border-radius: 5px 5px 5px 5px;
+    background-color: white; */
+    /* width: 83%; */
+    /* margin-left: 8.5%; */
+}
+.titleRowInsideCol
+{
+    margin: 2%;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+}
+.textTitleColumn {
+    padding-left: 3%;
+    padding-top: 0.5%;
+    font-size: 14px;
+}
+.textSmall
+{
+    font-size: 13px;
+}
+.textSmallSomeBig
+{
+    font-size: 15px;
+    font-weight: light;
+    padding-top: 2%;
+}
+.thingsText3{
+    padding-left: 10px;
+    padding-top: 7px;
+    font-size: 13px;
+
+}
+.contactAgent
+{
+    font-weight: normal;
+    padding-top: 4%;
+}
+.showContact
+{
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(13, 99, 201);
+}
+#nameInput
+{
+    margin-top: 10%;
+    font-size: 15px;
+}
+#emailInput
+{
+    margin-top: 7%;
+    font-size: 15px;
+}
+
+#mobileInput
+{
+    margin-top: 7%;
+    font-size: 15px;
+}
+.btnSendMessage
+{
+    width: 100%;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+#discInput
+{
+    margin-top: 7%;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    text-align: left;
+    font-size: 15px;
+}
+#rowCollapsesWali
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.priceTitleColumn {
+    font-size: 21px;
+}
+
+#contactColumn {
+    border: 0px solid black;
+    margin-top: 1%;
+}
+
+#heart3 {
+    text-align: right;
+    padding-left: 60%;
+    font-size: 30px;
+    color: grey;
+    /* border: 1px solid rgb(66, 66, 66); */
+}
+
+#heart3:hover {
+    color: rgb(201, 30, 30);
+    text-shadow: 2px 2px 2px grey;
+}
+
+.things3 {
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.arrowDown {
+    font-size: 25px;
+    margin: auto;
+}
+
+/* Here is the actual adDetails component styling starting */
+
+#hideIt {
+    width: 50%;
+}
+
+#lhistory {
+    width: 15%;
+}
+
+#rhistory {
+    width: 15%;
+}
+
+#RowDetailsOfData {
+    width: 85%;
+    margin: auto;
+}
+
+/* For media queries */
+
+@media all and (max-width:1270px) {
+    #hideIt {
+        display: none;
+    }
+    #lhistory, #rhistory {
+        width: 50%;
+    }
+    #rhistory {
+        width: 70%;
+    }
+    /* #topNavText
+{
+width: 100%;
+margin: auto;
+} */
+}
+
+@media all and (max-width:1200px) {
+    #heart3 {
+        padding-left: 50%;
+    }
+}
+
+
+@media all and (max-width:990px) {
+    #contactColumn
+    {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:990px) {
+    #heart3 {
+        padding-left: 40%;
+    }
+    #RowDetailsOfData {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:845px) {
+    #RowDetailsOfData {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:530px) {
+    #heart3 {
+        padding-left: 30%;
+    }
+}
+
+@media all and (max-width:462px) {
+    #heart3 {
+        padding-left: 20%;
+    }
+}
+
+@media all and (max-width:410px) {
+    #heart3 {
+        padding-left: 15%;
+    }
+}
+
+@media all and (max-width:388px) {
+    #heart3 {
+        position: absolute;
+        right: 5%;
+    }
+}
+
+@media all and (max-width:368px) {
+    #heart3 {
+      
+        right: 10%;
+    }
+}
+
+@media all and (max-width:352px) {
+    #heart3 {
+        
+        right: 10%;
+    }
+}
+
+@media all and (max-width:342px) {
+    #heart3 {
+  
+        right: 12%;
+    }
+}
+
+@media all and (max-width:400px) {
+    /* #hideIt
+    {
+        display: none;
+
+    }*/
+    #lhistory, #rhistory {
+        width: 50%;
+    }
+    #rhistory {
+        width: 70%;
+        padding-left: 2%;
+    }
+    #topNavText {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media all and (max-width:320px) {
+    /* #hideIt
+    {
+        display: none;
+
+    } */
+    #lhistory, #rhistory {
+        width: 50%;
+    }
+    #rhistory {
+        width: 50%;
+    }
+    #topNavText {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* For media queries */

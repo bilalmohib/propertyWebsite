@@ -52,7 +52,17 @@
     display: flex;
     padding-left: 35%;
 }
-
+#cr
+{
+   margin-left: 4%; 
+   color: grey;
+}
+@media all and (max-width:1000px) {
+    #cr
+    {
+       margin-left: 0%; 
+    }   
+}
 @media all and (max-width:576px) {
     #fmobileIconsList {
         padding-top: 5%;

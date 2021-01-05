@@ -37,6 +37,8 @@ const Footer = () => {
                             <li className="fnav"><Link to="/">Sitemap</Link></li>
                             <li className="fnav"><Link to="/">Agent Zone</Link></li>
                         </ul>
+                        <br/>
+                        <h6 id="cr">Copyright © 2020 Property24 - All rights reserved.</h6>
                     </MDBCol>
                     <MDBCol sm="4" md="4">
                          <h6 id="fmobileIconsListHeading">Download the App</h6>
@@ -46,7 +48,7 @@ const Footer = () => {
                          </ul>
                     </MDBCol>
                 </MDBRow>
-                <h6 style={{color:"grey"}}>Copyright © 2020 Property24 - All rights reserved.</h6>
+                
             </MDBContainer>
  
         </div>

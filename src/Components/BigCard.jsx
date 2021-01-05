@@ -34,7 +34,7 @@ const BigCard = () => {
                 </MDBRow>
                 <MDBRow>
                     <MDBCol lg="4" md="5">
-                        <h3 id="priceSmall">R 2 650 000</h3>
+                        <h3 id="price">R 2 650 000</h3>
                     </MDBCol>
                     <MDBCol lg="5" md="5">
                         <h6 id="title">3 Bedroom House for Sale in Lonehill</h6>

@@ -8,7 +8,6 @@ const Articles = () => {
         <MDBContainer id="articlesBlock">
             <MDBRow>
 
-
                 {/* Thats the bigger NEWS Column */}
                 <MDBCol md="6">
                     <h5 className="NewsTitle">News</h5>
