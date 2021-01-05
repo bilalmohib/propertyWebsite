@@ -12,8 +12,8 @@
 }
 #userphotohere
 {
-    width: 200px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     margin-left: 2%;
     box-shadow: 1px 1px 1px 1px grey;
@@ -21,7 +21,7 @@
 
 #userphotohere:hover
 {
-    border: 1px solid rgb(125, 125, 172)134, 134, 168);
+    border: 1px solid rgb(125, 125, 172);
     box-shadow: 2px 2px 2px 2px grey;
 }
 h4,h6,button,label{

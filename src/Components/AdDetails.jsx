@@ -25,14 +25,14 @@ const AdDetails = () => {
                     <Link className="history"> <AiOutlineArrowLeft /> Back to Results </Link>
                     </div>
                     <div id="hideIt">
-                        <Link className="history"> | Property for Sale </Link>
+                        <Link className="history"> Property for Sale </Link>
                         <Link className="history"> <AiOutlineArrowRight /> Gauteng </Link>
                         <Link className="history"> <AiOutlineArrowRight /> Edenvale </Link>
                         <Link className="history"> <AiOutlineArrowRight /> Eden Glen </Link>
                         <Link className="history"> <AiOutlineArrowRight /> 105446339 </Link>
                     </div>
                     <div id="rhistory">
-                    <Link className="history"> <AiOutlineArrowLeft /> | Move to Next </Link>
+                    <Link className="history"> Move to Next <AiOutlineArrowRight /> </Link>
                     </div>
                 </div>
             </div>

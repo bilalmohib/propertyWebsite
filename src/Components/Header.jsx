@@ -204,9 +204,9 @@ const Header = () => {
 
               <li id="alertBtn" className="nav-item">
                 <div class="btn-group">
-                  <Link 
+                  <Link
                     id="dropdownMenuButton"
-                  
+
                     class="dropdown-toggle"
                     data-mdb-toggle="dropdown"
                     aria-expanded="false"
@@ -219,13 +219,13 @@ const Header = () => {
                   <div class="dropdown-menu" id="headerDropdownAlert" aria-labelledby="dropdownMenuButton">
                     <div id="alert">
                       <div>
-                        <div style={{ float: "left",marginLeft:"10px",marginTop:"10px" }}>Alerts</div>
-                        <div style={{ float: "right",marginRight:"10px",marginTop:"10px" }}> <Link to="/">Manage Alerts</Link> </div>
+                        <div style={{ float: "left", marginLeft: "10px", marginTop: "10px" }}>Alerts</div>
+                        <div style={{ float: "right", marginRight: "10px", marginTop: "10px" }}> <Link to="/">Manage Alerts</Link> </div>
                       </div>
 
-                    
-                      <div  style={{borderTop:"1px solid grey"}}>
-                              <div style={{paddingTop:"7%"}} className="text-center"> <Link to="/">Login</Link>  or <Link to="/">Sign Up</Link> to be notified of the latest listings as they arrive!</div>
+
+                      <div style={{ borderTop: "1px solid grey" }}>
+                        <div style={{ paddingTop: "7%" }} className="text-center"> <Link to="/">Login</Link>  or <Link to="/">Sign Up</Link> to be notified of the latest listings as they arrive!</div>
                       </div>
                     </div>
                   </div>
