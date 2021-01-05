@@ -4,6 +4,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import { Link } from 'react-router-dom';
 import '../Styling/Filters.css'
 
+
 class Filters extends Component {
     constructor() {
         super()
@@ -109,7 +110,7 @@ class Filters extends Component {
     render() {
         const styles = {
             multiselectContainer: { // To change css for multiselect (Width,height,etc..)
-                width: "150px",
+                width: "100%",
             },
             searchBox: { // To change search box element look
                 //   border: none;
@@ -123,7 +124,6 @@ class Filters extends Component {
                 color: "#cbdaee",
                 width: "100%",
                 height: "20px"
-
             },
             chips: { // To change css chips(Selected options)
                 //   background: red;
@@ -133,7 +133,7 @@ class Filters extends Component {
                 //   border: 2px solid;
                 color: "black",
                 backgroundColor: "white",
-                width: "200px"
+                width: "100%"
             },
             option: { // To change css for dropdown options
                 //   color: blue;
@@ -147,7 +147,7 @@ class Filters extends Component {
         return (
             <div>
                 <div id="filters">
-                    <div id="container">
+                    <div id="containerForDesktop">
                         <h1 id="heading">Find Property for Sale</h1>
                         <div id="titleContainer">
                             <MDBContainer>
@@ -182,12 +182,12 @@ class Filters extends Component {
                             {/* Row 1 of drop downs */}
                             <div id="ROW1DROPDOWN">
                                 <MDBContainer>
-                                    <MDBRow id="rowproperty1    " style={{marginLeft:"-3%"}}>
+                                    <MDBRow id="rowproperty1" style={{ marginLeft: "-3%" }}>
 
 
                                         <MDBCol lg="3" md="6" sm="6">
                                             <p className="paraRow">Property Type</p>
-                                            <div className="col">
+                                            <div style={{ width: "100%" }} className="col">
 
                                                 <Multiselect
                                                     style={styles}
@@ -280,7 +280,7 @@ class Filters extends Component {
                                 aria-controls="collapseExample"
                             >More Filters + </button>
                         </div>
-                        
+
                         <br />
 
                         <div class="collapse mt-3" id="collapseExample">
@@ -438,10 +438,285 @@ class Filters extends Component {
                         </div>
 
                         <button id="btnsearchMobile" type="button" class="btn">Search</button>
-                    
-                   <br/>
+
+                        <br />
 
                     </div>
+
+                    <div id="containerForMobile">
+                        <br/>
+                        <h1 id="headingMobile">Find Property for Sale</h1>
+                        <div id="titleContainerMobile">
+                            <Link className="linkMobileFilter">For Sale</Link>
+                            <Link className="linkMobileFilter">To Rent</Link>
+                            <Link className="linkMobileFilter">Developments</Link>
+                        </div>
+                        <div>
+                            <div id="searchInputMobile">
+                                <input style={{ borderRadius: "0%", height: "50px", backgroundColor: "white" }} placeholder="Search for a City, Suburb or Web Ref..." type="text" id="typeText" class="form-control" />
+
+                                <button id="btnsearch" type="button" class="btn">Search</button>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-group">
+                            <label htmlFor="propertyMoile" className="labelMobileFilterSelect">Property Type</label>
+                            <select class="form-control" id="propertyMoile">
+                                <option defaultValue="true">Any</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <br />
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="MinPriceMobile" className="labelMobileFilterSelect">Min Price</label>
+                                <select class="form-control" id="MinPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="halfMobileSelect" className="labelMobileFilterSelect">Max Price</label>
+                                <select class="form-control" id="MaxPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="MinPriceMobile" className="labelMobileFilterSelect">Bedrooms</label>
+                                <select class="form-control" id="MinPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="halfMobileSelect" className="labelMobileFilterSelect">Bathrooms</label>
+                                <select class="form-control" id="MaxPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <br />
+                        <div style={{textAlign:"center"}}>
+                        <a
+                            style={{fontSize:"17px"}}
+                            class="btn btn-primary btn-lg"
+                            data-mdb-toggle="collapse"
+                            href="#collapseMobileFilterView"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseMobileFilterView"
+                        >
+                            More Filters +
+                        </a>
+                        </div>
+                        <br />
+
+                        {/* <!-- ////////////////////////////////////////////Collapsed content///////////////////////////////////// --> */}
+                        <div class="collapse mt-3" id="collapseMobileFilterView">
+                        
+                        <div>
+                            <p className="labelMobileFilterSelect">Parking / Garage</p>
+                            <hr />
+                        </div>
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="MinPriceMobile" className="labelMobileFilterSelect">Spaces</label>
+                                <select class="form-control" id="MinPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="halfMobileSelect" className="labelMobileFilterSelect">Type</label>
+                                <select class="form-control" id="MaxPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <br />
+
+
+                        <div>
+                            <p className="labelMobileFilterSelect">Size</p>
+                            <hr />
+                        </div>
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="MinPriceMobile" className="labelMobileFilterSelect">Min Floor Size (m²)</label>
+                                <select class="form-control" id="MinPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="halfMobileSelect" className="labelMobileFilterSelect">Max Floor Size (m²)</label>
+                                <select class="form-control" id="MaxPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="MinPriceMobile" className="labelMobileFilterSelect">Min Erf Size (m²)</label>
+                                <select class="form-control" id="MinPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <label htmlFor="halfMobileSelect" className="labelMobileFilterSelect">Max Erf Size (m²)</label>
+                                <select class="form-control" id="MaxPriceMobile">
+                                    <option defaultValue={true}>Any</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div>
+                            <p className="labelMobileFilterSelect">Features</p>
+                            <hr />
+                        </div>
+
+
+
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <div class="form-check">
+                                    <input type="checkbox" className="form-check-input" id="Pet_Friendly" />
+                                    <label className="form-check-label" htmlFor="Pet_Friendly">Pet Friendly</label>
+                                </div>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <div class="form-check">
+                                    <input type="checkbox" className="form-check-input" id="Pet_Friendly" />
+                                    <label className="form-check-label" htmlFor="Pet_Friendly">Pet Friendly</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <div class="form-check">
+                                    <input type="checkbox" className="form-check-input" id="Flatlet" />
+                                    <label className="form-check-label" htmlFor="Flatlet">Flatlet</label>
+                                </div>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <div class="form-check">
+                                    <input type="checkbox" className="form-check-input" id="Pool" />
+                                    <label className="form-check-label" htmlFor="Pool">Pool</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <br />
+
+                        <div>
+                            <p className="labelMobileFilterSelect">Other</p>
+                            <hr />
+                        </div>
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <div class="form-check">
+                                    <input type="checkbox" className="form-check-input" id="Retirement" />
+                                    <label className="form-check-label" htmlFor="Retirement">Retirement</label>
+                                </div>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <div class="form-check">
+                                    <input type="checkbox" className="form-check-input" id="On Show" />
+                                    <label className="form-check-label" htmlFor="On Show">On Show</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <div class="form-check">
+                                    <input type="checkbox" className="form-check-input" id="Repossessed" />
+                                    <label className="form-check-label" htmlFor="Repossessed">Repossessed</label>
+                                </div>
+                            </div>
+                            <div style={{ width: "50%", padding: "1%" }}>
+                                <div class="form-check">
+                                    <input type="checkbox" className="form-check-input" id="Auction" />
+                                    <label className="form-check-label" htmlFor="Auction">Auction</label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        {/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+
+
+                        <br />
+                        <button type="button" style={{ fontSize: "20px" }} class="btn btn-danger btn-block">Search</button>
+
+                        <br />
+                        <br />
+
+                    </div>
+
+
                 </div>
 
             </div>

@@ -4,12 +4,13 @@
     max-width: 100vw;
 }
 
-#container {
+#containerForDesktop {
     padding-top: 2%;
     padding-left: 14%;
     color: white;
     font-weight: lighter;
 }
+
 
 #heading {
     color: white;
@@ -135,3 +136,73 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
    color: white;
   }
+
+
+/* For Mobile View */ 
+#containerForMobile {
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+    font-weight: lighter;
+    display: none;
+}
+@media all and (max-width:1245px)
+{
+    #containerForDesktop {
+        display: none;
+    }
+    #containerForMobile {
+        display: block;
+    }
+    #headingMobile   
+    {
+        text-align: center;
+    }
+    #titleContainerMobile
+    {
+        text-align: center;
+    }
+    .linkMobileFilter
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .linkMobileFilter:hover
+    {
+        color: white;
+        text-decoration: underline;
+    }
+    #searchInputMobile
+    {
+        padding-top: 3%;
+    }
+    .labelMobileFilterSelect
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    #halfMobileSelect
+    {
+         width: 50%;
+    }
+}
+
+@media all and (max-width:325px)
+{
+    .linkMobileFilter
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 5%;
+    }
+}
+
+/* For Mobile View */
+  

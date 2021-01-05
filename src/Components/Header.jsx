@@ -203,11 +203,11 @@ const Header = () => {
               </li>
 
               <li id="alertBtn" className="nav-item">
-                <div class="btn-group">
-                  <Link
+                <div class="btn-group shadow-0">
+                  <a
                     id="dropdownMenuButton"
 
-                    class="dropdown-toggle"
+                    className="dropdown-toggle"
                     data-mdb-toggle="dropdown"
                     aria-expanded="false"
                   >
@@ -215,7 +215,7 @@ const Header = () => {
                       <BsBell />
                     </span>
 
-                  </Link>
+                  </a>
                   <div class="dropdown-menu" id="headerDropdownAlert" aria-labelledby="dropdownMenuButton">
                     <div id="alert">
                       <div>
