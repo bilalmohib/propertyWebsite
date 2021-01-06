@@ -3,7 +3,7 @@
     box-shadow: 2px 2px 2px grey;
     border: 1px solid grey;
     border-radius: 5px 5px 5px 5px;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .col
@@ -12,10 +12,10 @@
 }
 #userphotohere
 {
-    width: 220px;
-    height: 220px;
+    width: 100px;
+    height:100px;
     border-radius: 50%;
-    margin-left: 2%;
+    margin-left: 7%;
     box-shadow: 1px 1px 1px 1px grey;
 }
 

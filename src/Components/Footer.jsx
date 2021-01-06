@@ -9,7 +9,7 @@ const Footer = () => {
     return(
         <div>
             <br/>
-            <MDBContainer>
+            <MDBContainer id="footerContainer">
                 <MDBRow>
                     <MDBCol md="6">
                     <a class="navbar-brand" id="logoFooter" href="#">property<span style={{ color: "red" }}>24</span></a> 
@@ -26,8 +26,8 @@ const Footer = () => {
                     
                 </MDBRow>
                 <hr/>               
-                <MDBRow>
-                    <MDBCol sm="8" md="8">
+                <MDBRow className="footerSecondRow">
+                    <MDBCol lg="8" sm="8" md="8">
                         <ul id="fnavBlock">
                             <li className="fnav"><Link to="/">About Us</Link></li>
                             <li className="fnav"><Link  to="/">Contact Us</Link></li>
@@ -40,7 +40,7 @@ const Footer = () => {
                         <br/>
                         <h6 id="cr">Copyright © 2020 Property24 - All rights reserved.</h6>
                     </MDBCol>
-                    <MDBCol sm="4" md="4">
+                    <MDBCol lg="4" sm="4" md="4">
                          <h6 id="fmobileIconsListHeading">Download the App</h6>
                          <ul id="fmobileIconsList">
                              <li className="ficonsMobile"><Link style={{color:"inherit",textDecoration:"none"}} to="/"><AiFillApple/></Link></li>

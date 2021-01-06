@@ -6,7 +6,7 @@
 }
 
 #pfsm {
-    padding-left: 5%;
+    padding-left: 2%;
 }
 
 .paraMobileTablet {
@@ -20,16 +20,17 @@
     border-radius: 2%;
     margin-left: -50%;
 }
-
+#mobileAppPic
+{
+    max-width: 100%;
+    padding-left: 8%;
+}
 @media all and (max-width:1105px) {
     #btnApp {
         margin-left: -40%;
     }
 }
-#mobileAppPic
-{
-    max-width: 100%;
-}
+
 @media all and (max-width:992px) {
     #btnApp {
         margin-left: -20%;

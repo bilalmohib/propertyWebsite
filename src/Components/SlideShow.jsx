@@ -9,6 +9,7 @@ import '../Styling/SlideShow.css';
 class SlideShow extends React.Component {
     render() {
         return (
+          <MDBContainer>
             <div id="GreatBox" className="bg-light">
             <div id="carouselExampleIndicators" className="carousel slide" data-mdb-ride="carousel">
             <ol className="carousel-indicators">
@@ -37,6 +38,7 @@ class SlideShow extends React.Component {
             </a>
           </div>
           </div>
+          </MDBContainer>
         );
     }
 }

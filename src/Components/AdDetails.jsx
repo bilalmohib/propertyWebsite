@@ -17,8 +17,10 @@ import SlideShow from './SlideShow';
 const AdDetails = () => {
     return (
         <div>
+    
             <Header />
             {/* this is the top navigation upper to the slide show */}
+            <MDBContainer>
             <div id="topNav">
                 <div id="topNavText">
                     <div id="lhistory">
@@ -36,6 +38,8 @@ const AdDetails = () => {
                     </div>
                 </div>
             </div>
+           
+            </MDBContainer>
             {/* this is the top navigation upper to the slide show */}
             <SlideShow />
 

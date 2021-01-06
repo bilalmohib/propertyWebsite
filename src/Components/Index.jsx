@@ -75,7 +75,7 @@ const Index = () => {
                         </MDBCol>
                         <MDBCol style={{textAlign:"left",color:"white"}} md="4">
                             <ul>
-                                <li><h6><b><Link className="link">Property for sale in KwaZulu Natal</Link></b></h6></li>
+                                <li><h6><b><Link className="link">Property for sale in <br/> KwaZulu Natal</Link></b></h6></li>
                                 <li><br/></li>
                                 <li><Link className="link" to="/">Bloemfontein</Link></li>
                                 <li><Link className="link" to="/">East London</Link></li>

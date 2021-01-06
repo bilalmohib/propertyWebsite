@@ -183,11 +183,12 @@ class Admin extends React.Component {
         }
         return (
             <div>
+                <MDBContainer>
                 <Header />
                 <h2 className="text-center text-primary">Post Your Property Ad</h2>
 
                 <div id="form">
-
+                   
                     <h4>ENTER THE DETAILS BELOW</h4>
                     {/* <h6>Condition *</h6>
 
@@ -219,13 +220,12 @@ class Admin extends React.Component {
 
                     <h3 style={{marginLeft:"2%"}}>Room Details</h3>
 
-                    <div style={{ width: "100%", display: "flex", paddingLeft: "1%" }}>
+                    <div style={{ width: "100%", display: "flex", paddingLeft: "2%" }}>
                         
                         {/* Row 1 of drop downs */}
                         <div id="ROW1DROPDOWN">
-                            <MDBContainer>
+                          
                                 <MDBRow id="rowproperty1">
-
 
                                     <MDBCol lg="3" md="6" sm="6">
                                         <p className="paraRow">Property Type</p>
@@ -292,7 +292,7 @@ class Admin extends React.Component {
                                         </div>
                                     </MDBCol>
                                 </MDBRow>
-                            </MDBContainer>
+                     
                         </div>
                         {/* Row 1 of drop downs */}
                     </div>
@@ -302,13 +302,12 @@ class Admin extends React.Component {
 
 
                     {/* Row 2 of drop downs */}
-                    <div id="ROW2DROPDOWN" style={{ paddingLeft: "1%" }}>
-                        <MDBContainer>
+                    <div id="ROW1DROPDOWN" style={{paddingLeft:"2%"}}>
+
                             <MDBRow>
                                 <MDBCol lg="3" md="6" sm="6">
                                     <p className="paraRow">Bathrooms</p>
                                     <div className="col">
-
                                         <Multiselect
                                             style={styles}
                                             options={this.state.bathrooms} // Options to display in the dropdown
@@ -370,18 +369,18 @@ class Admin extends React.Component {
                                     </div>
                                 </MDBCol>
                             </MDBRow>
-                        </MDBContainer>
+                    
                     </div>
                     {/* Row 2 of drop downs */}
 
 
 
                     {/* Features block */}
-                    <div id="ROW3DROPDOWN" style={{ paddingLeft: "2%" }}>
-                        <MDBContainer>
+                    <div id="ROW1DROPDOWN" style={{paddingLeft:"2%"}}>
+                      
                             <MDBRow>
                                 <MDBCol lg="5" md="6" sm="6">
-                                    <p style={{ marginBottom: "0%", fontSize: "20px", marginLeft: "-2%", fontWeight: "bold" }} className="text-primary paraRow">Features</p>
+                                    <p style={{ marginBottom: "0%", fontSize: "20px",fontWeight: "bold",marginLeft:"-1%" }} className="text-primary paraRow">Features</p>
                                     <MDBRow>
                                         <MDBCol lg="5">
                                             {/* <!-- Material unchecked --> */}
@@ -415,7 +414,7 @@ class Admin extends React.Component {
 
                                 </MDBCol>
                                 <MDBCol lg="5" md="6" sm="6">
-                                    <p style={{ marginBottom: "0%", fontSize: "20px", marginLeft: "-2%", fontWeight: "bold" }} className="text-primary paraRow">Other</p>
+                                    <p style={{ marginBottom: "0%", fontSize: "20px", fontWeight: "bold",marginLeft:"-1%" }} className="text-primary paraRow">Other</p>
                                     <MDBRow>
                                         <MDBCol lg="5">
                                             {/* <!-- Material unchecked --> */}
@@ -448,7 +447,7 @@ class Admin extends React.Component {
                                     </MDBRow>
                                 </MDBCol>
                             </MDBRow>
-                        </MDBContainer>
+                        
                     </div>
                     {/* Features block */}
 
@@ -458,7 +457,7 @@ class Admin extends React.Component {
                     <h4>SET A PRICE</h4>
 
                     <label>
-                        <input id="priceuser" className="form-control" type="number" placeholder="Price in Rupees(R.S)" max="10000000000" min="1" />
+                        <input className="form-control" type="number" placeholder="Price in Rupees(R.S)" max="10000000000" min="1" />
                     </label>
 
                     <br />
@@ -492,8 +491,8 @@ class Admin extends React.Component {
 
                     <h4>CONFIRM YOUR LOCATION</h4>
 
-                    <div>
-                        <MDBContainer>
+                    <div style={{paddingLeft:"2%"}} >
+                        
                             <MDBRow>
                                 {/*    <MDBCol md="1">
 
@@ -504,7 +503,7 @@ class Admin extends React.Component {
                                 </div>
                             </MDBCol> */}
                                 <MDBCol md="12">
-                                    <select
+                                    <select style={{fontSize:"20px"}}
                                         className="custom-select">
                                         <option id="location" value="Use Current Location">Use Current Location</option>
                                         <option defaultValue="Lahore,Pakistan" value="Lahore,Pakistan">Lahore,Pakistan</option>
@@ -525,7 +524,7 @@ class Admin extends React.Component {
                                 </MDBCol>
 
                             </MDBRow>
-                        </MDBContainer>
+                     
                     </div>
                     <hr />
 
@@ -533,15 +532,15 @@ class Admin extends React.Component {
                     <h4>REVIEW YOUR DETAILS</h4>
 
 
-                    <MDBContainer>
+                    
 
                         <MDBRow>
 
-                            <MDBCol md="6">
+                            <MDBCol md="3">
                                 <img id="userphotohere" src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" alt="This is your image" />
                             </MDBCol>
 
-                            <MDBCol md="6">
+                            <MDBCol md="3">
                                 <label className="text-info" style={{ marginLeft: "5%" }} htmlFor="rid">
                                     Name:
                              <input className="gettedname" value="Muhammad Bilal" className="text-dark form-control" type="text" />
@@ -550,7 +549,7 @@ class Admin extends React.Component {
 
                         </MDBRow>
 
-                    </MDBContainer>
+                   
 
                     <br />
                     <br />
@@ -578,7 +577,7 @@ class Admin extends React.Component {
                 <Index />
 
                 <Footer />
-
+                </MDBContainer>
             </div>
         )
     }

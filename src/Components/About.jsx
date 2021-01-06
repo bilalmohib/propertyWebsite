@@ -6,9 +6,9 @@ import '../Styling/About.css'
 const About = () => {
     return (
         <div>
-            <MDBContainer>
+            <MDBContainer className="aboutContainer">
                 <MDBRow>
-                    <MDBCol  md="8">
+                    <MDBCol md="8">
                         <h2 className="title">We're SA's number one property website</h2>
                         <p className="para">Property24.com is South Africa's largest property search portal and is the first place to start your property search! <br/>
                         Property24.com lists houses, flats, vacant land and farms from all of SA's leading estate agents, so whether you're looking to buy or rent, you'll find your perfect home on Property24.com.

@@ -7,6 +7,7 @@ const SaleinGauteng = () => {
     return (
         <div>
             <MDBContainer id="pfs">
+                <hr/>
                 {/* It is main Row */}
                 <MDBRow>
                     {/* It is property for sale in gauteng */}

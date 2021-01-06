@@ -12,6 +12,7 @@
 #line{
     border-left: 1px solid rgb(219, 219, 219);
 }
+
 @media all and (max-width:770px) {
     #line{
         border-left: 0px solid grey;
