@@ -20,7 +20,7 @@ const AdDetails = () => {
     
             <Header />
             {/* this is the top navigation upper to the slide show */}
-            <MDBContainer>
+            
             <div id="topNav">
                 <div id="topNavText">
                     <div id="lhistory">
@@ -39,7 +39,7 @@ const AdDetails = () => {
                 </div>
             </div>
            
-            </MDBContainer>
+            
             {/* this is the top navigation upper to the slide show */}
             <SlideShow />
 
