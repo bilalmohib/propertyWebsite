@@ -1,3 +1,4 @@
+import { MDBContainer } from 'mdbreact';
 import React from 'react'
 import { BsBell } from 'react-icons/bs';
 
@@ -10,7 +11,8 @@ import '../Styling/Header.css'
 const Header = () => {
   return (
     <div>
-
+<MDBContainer>
+  
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
         <div class="container-fluid">
@@ -240,7 +242,7 @@ const Header = () => {
         </div>
 
       </nav>
-
+      </MDBContainer>
     </div>
   )
 }

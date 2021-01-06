@@ -145,12 +145,14 @@ class Filters extends Component {
             }
         }
         return (
-            <div>
-                <div id="filters">
+            <div id="filters">
+                <MDBContainer>
+                    <MDBRow>
+                        <MDBCol md="12" lg="12">
                     <div id="containerForDesktop">
                         <h1 id="heading">Find Property for Sale</h1>
                         <div id="titleContainer">
-                            <MDBContainer>
+                            
                                 <MDBRow>
                                     <MDBCol lg="2" md="6" sm="6">
                                         <Link style={{ color: "white", fontSize: "13px" }} to="/">For Sale</Link>
@@ -168,7 +170,7 @@ class Filters extends Component {
                                         <Link style={{ color: "white", fontSize: "13px" }} to="/">Sold Prices</Link>
                                     </MDBCol>
                                 </MDBRow>
-                            </MDBContainer>
+                            
                         </div>
                         <div>
                             <div id="searchInput">
@@ -181,13 +183,13 @@ class Filters extends Component {
                         <div style={{ width: "100%", display: "flex" }}>
                             {/* Row 1 of drop downs */}
                             <div id="ROW1DROPDOWN">
-                                <MDBContainer>
-                                    <MDBRow id="rowproperty1" style={{ marginLeft: "-3%" }}>
+                                
+                                    <MDBRow id="rowproperty1">
 
 
                                         <MDBCol lg="3" md="6" sm="6">
                                             <p className="paraRow">Property Type</p>
-                                            <div style={{ width: "100%" }} className="col">
+                                            <div className="col">
 
                                                 <Multiselect
                                                     style={styles}
@@ -253,7 +255,7 @@ class Filters extends Component {
 
 
                                     </MDBRow>
-                                </MDBContainer>
+                                
 
                             </div>
                             {/* Row 1 of drop downs */}
@@ -286,7 +288,7 @@ class Filters extends Component {
                         <div class="collapse mt-3" id="collapseExample">
                             {/* Row 2 of drop downs */}
                             <div id="ROW2DROPDOWN">
-                                <MDBContainer>
+                                
                                     <MDBRow>
                                         <MDBCol lg="3" md="6" sm="6">
                                             <p className="paraRow">Bathrooms</p>
@@ -353,7 +355,7 @@ class Filters extends Component {
                                             </div>
                                         </MDBCol>
                                     </MDBRow>
-                                </MDBContainer>
+                                
                             </div>
                             {/* Row 2 of drop downs */}
 
@@ -361,7 +363,7 @@ class Filters extends Component {
 
                             {/* Features block */}
                             <div id="ROW3DROPDOWN">
-                                <MDBContainer>
+                                
                                     <MDBRow>
                                         <MDBCol lg="5" md="6" sm="6">
                                             <p style={{ marginBottom: "0%", fontSize: "20px", color: "aliceblue" }} className="paraRow">Features</p>
@@ -432,7 +434,7 @@ class Filters extends Component {
                                             </MDBRow>
                                         </MDBCol>
                                     </MDBRow>
-                                </MDBContainer>
+                               
                             </div>
                             {/* Features block */}
                         </div>
@@ -715,9 +717,9 @@ class Filters extends Component {
                         <br />
 
                     </div>
-
-
-                </div>
+                    </MDBCol>
+                    </MDBRow>
+                </MDBContainer>
 
             </div>
         )

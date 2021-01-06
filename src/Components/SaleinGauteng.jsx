@@ -6,12 +6,7 @@ import '../Styling/SaleinGauteng.css'
 const SaleinGauteng = () => {
     return (
         <div>
-
-
-
-
             <MDBContainer id="pfs">
-
                 {/* It is main Row */}
                 <MDBRow>
                     {/* It is property for sale in gauteng */}

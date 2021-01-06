@@ -1,5 +1,6 @@
 #smallcard {
-    width: 38%;
+    width: 69%;
+    margin-left: 7%;
     border: 1px solid rgb(192, 218, 241);
     border-radius: 5px 5px 5px 5px;
     box-shadow: 1x 1px 1px 1px rgb(87, 86, 86);
@@ -100,7 +101,8 @@
 {
     
         #smallcard {
-            width: 50%;
+            width: 70%;
+                margin-left: 7%;
         }
     
 }
@@ -108,7 +110,8 @@
 {
     
         #smallcard {
-            width: 55%;
+            width: 80%;
+            margin-left: 1%;
         }
     
 }
@@ -135,7 +138,8 @@
         /* padding-top: 16%; */
     }
     #smallcard {
-        width: 60%;
+        width: 70%;
+        margin: auto;
     }
 }
 @media all and (max-width:455px) {
@@ -145,13 +149,13 @@
         padding-top: 16%; 
     } */
     #smallcard {
-        width: 70%;
+        width: 80%;
     }
 }
 @media all and (max-width:350px)
 {
     #smallcard {
-        width: 80%;
+        width: 90%;
     }
 }
 @media all and (max-width:490px) {

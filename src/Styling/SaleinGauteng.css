@@ -1,6 +1,6 @@
 .titleP {
     color: rgb(13, 99, 201);
-    margin-left: 1.5%;
+    margin-left: 1%;
     font-weight: bold;
     margin-bottom: 2%;
 }
@@ -21,13 +21,18 @@ ul li {
 }
 
 #pfs {
-    padding-left: 4%;
+    padding-left: 5%;
 }
 
 #girafa {
     max-width: 100%;
 }
 
+@media all and (max-width:992px) {
+    #pfs {
+        padding-left: 0%;
+    }
+}
 @media all and (max-width:765px) {
     #girafa {
         max-width: 100%;

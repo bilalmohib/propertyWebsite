@@ -1,6 +1,6 @@
 #bigcard {
     width: 84%;
-    margin-left: 51%;
+    /* margin-left: 51%; */
     border: 1px solid rgb(192, 218, 241);
     border-radius: 5px 5px 5px 5px;
     box-shadow: 1x 1px 1px 1px rgb(87, 86, 86);
@@ -23,6 +23,8 @@
 #rightimage {
     width: 104.5%;
     /* margin-left: 0%; */
+    height: 100%;
+    padding-right: 1%;
     border-radius: 3px 3px 3px 3px;
 }
 
@@ -62,59 +64,116 @@
     font-size: 10px;
 }
 
+/* For desktop side images */
+
+#ForDesktopSideImages {
+    display: block;
+}
+
+/* For desktop side images */
+
+/* Show for mobile side images */
+
+#ForMobileSideImages {
+    display: none;
+}
+
+/* Show for mobile side images */
+
 @media all and (max-width:1325px) {
     #bigcard {
-        width: 45%;
+        width: 100%;
         margin-left: auto;
     }
 }
-    @media all and (max-width:960px) {
-        #bigcard {
-            width: 50%;
-        }
-        #rightimage {
-            width: 100%;
-        }
-        .leftrow {
-            width: 98%;
-            margin-top: 2%;
-            height: 200px;
-        }
+
+@media all and (max-width:960px) {
+    #bigcard {
+        width: 100%;
+        margin: auto;
     }
-    @media all and (max-width:856px) {
-        #bigcard {
-            width: 55%;
-        }
+    #rightimage {
+        width: 103%;
     }
-    @media all and (max-width:578px) {
-        #bigcard {
-            width: 60%;
-        }
+    .leftrow {
+        width: 98%;
+        margin-top: 2%;
+        height: 80px;
     }
-    @media all and (max-width:456px) {
-        #bigcard {
-            width: 70%;
-        }
+}
+
+@media all and (max-width:856px) {
+    #bigcard {
+        width: 100%;
     }
-    @media all and (max-width:350px) {
-        #bigcard {
-            width: 80%;
-        }
+}
+
+@media all and (max-width:766px) {
+    .leftrow {
+        width: 98%;
+        margin-top: 2%;
+        height: 80px;
     }
-    @media all and (max-width:760) {
-        #thigsRow {
-            margin-top: -20%;
-        }
+    /* For desktop side images */
+    #ForDesktopSideImages {
+        display: none;
     }
-    @media all and (max-width:490px) {
-        .leftrow {
-            width: 96%;
-            margin-top: 2%;
-            height: 150px;
-        }
+    /* For desktop side images */
+    /* Show for mobile side images */
+    #ForMobileSideImages {
+        display: block;
+        display: flex;
     }
-    @media all and (max-width:300px) {
-        #bigcard {
-            width: 90%;
-        }
+    /* Show for mobile side images */
+}
+
+@media all and (max-width:582px) {
+    #bigcard {
+        width: 70%;
     }
+    .leftrow {
+        width: 35%;
+        margin-top: 2%;
+        height: 80px;
+    }
+}
+@media all and (max-width:578px) {
+    #bigcard {
+        width: 70%;
+    }
+}
+
+@media all and (max-width:456px) {
+    #bigcard {
+        width: 80%;
+    }
+}
+
+@media all and (max-width:350px) {
+    #bigcard {
+        width: 90%;
+    }
+}
+
+@media all and (max-width:760) {
+    #thigsRow {
+        margin-top: -20%;
+    }
+}
+
+@media all and (max-width:490px) {
+    /* .leftrow {
+        width: 100%;
+        margin-top: 2%;
+        height: 100px;
+    } */
+    #rightimage {
+        width: 106%;
+    }
+}
+
+@media all and (max-width:300px) {
+    #bigcard {
+        width: 90%;
+    }
+}
