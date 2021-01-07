@@ -1,7 +1,7 @@
 #fIconsList {
     display: flex;
     flex-direction: row;
-    margin-left: 55%;
+    margin-left: 50%;
 }
 
 .ficons {
@@ -96,7 +96,52 @@
         padding-left: initial;
     }
     #fmobileIconsList {
+        padding-left: 25%;
+    }
+}
+@media all and (max-width:767px) {
+    #logoFooter {
+        padding-left: 1%;
+    }
+    #fIconsList {
+        margin-left: 0%;
+    }
+    #fmobileIconsList {
+        padding-left: 25%;
+    }
+    #fmobileIconsListHeading
+    {
+        margin-left: 0%;
+    }
+}
+@media all and (max-width:576px) {
+    #logoFooter {
+        padding-left: 1%;
+    }
+    #fIconsList {
+        margin-left: 0%;
+    }
+    #fmobileIconsList {
+        padding-left: 25%;
+    }
+    #fmobileIconsListHeading
+    {
+        margin-left: 65%;
+    }
+}
+@media all and (max-width:576px) {
+    #logoFooter {
+        padding-left: 1%;
+    }
+    #fIconsList {
+        margin-left: 0%;
+    }
+    #fmobileIconsList {
         padding-left: 0%;
+    }
+    #fmobileIconsListHeading
+    {
+        margin-left: initial;
     }
 }
 

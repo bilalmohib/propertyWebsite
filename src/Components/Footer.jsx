@@ -21,7 +21,6 @@ const Footer = () => {
                         <li className="ficons"><Link style={{color:"inherit",textDecoration:"none"}}  to="/"><FaPinterestSquare/></Link></li>
                         <li className="ficons"><Link style={{color:"inherit",textDecoration:"none"}}  to="/"><FaYoutube/></Link></li>
                     </ul> 
-                    
                     </MDBCol>
                     
                 </MDBRow>
