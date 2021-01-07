@@ -1,16 +1,21 @@
 #topNav {
     background-color: rgb(13, 99, 201);
     color: white;
+    height: 50px;
+    line-height: 40px;
 }
+
 #topNavText {
     display: flex;
     width: 70%;
     margin: 0 auto;
     font-size: 13px;
     padding: 5px;
+    padding-left: 2%;
     font-weight: lighter;
     /* border: 1px solid black; */
 }
+
 .history {
     padding-left: 5px;
     padding-top: 1%;
@@ -32,83 +37,84 @@
     /* width: 83%; */
     /* margin-left: 8.5%; */
 }
-.titleRowInsideCol
-{
-    margin: 2%;
+
+.titleRowInsideCol {
+    margin-top: 2%;
     border: 1px solid grey;
     border-radius: 5px 5px 5px 5px;
     background-color: white;
 }
+
 .textTitleColumn {
     padding-left: 3%;
     padding-top: 0.5%;
     font-size: 14px;
 }
-.textSmall
-{
+
+.textSmall {
     font-size: 13px;
 }
-.textSmallSomeBig
-{
+
+.textSmallSomeBig {
     font-size: 15px;
     font-weight: light;
     padding-top: 2%;
 }
-.thingsText3{
+
+.thingsText3 {
     padding-left: 10px;
     padding-top: 7px;
     font-size: 13px;
-
 }
-.contactAgent
-{
+
+.contactAgent {
     font-weight: normal;
     padding-top: 4%;
 }
-.showContact
-{
+
+.showContact {
     font-size: 14px;
     font-weight: lighter;
     color: rgb(13, 99, 201);
 }
-#nameInput
-{
+
+#nameInput {
     margin-top: 10%;
     font-size: 15px;
 }
-#emailInput
-{
+
+#emailInput {
     margin-top: 7%;
     font-size: 15px;
 }
 
-#mobileInput
-{
+#mobileInput {
     margin-top: 7%;
     font-size: 15px;
 }
-.btnSendMessage
-{
+
+.btnSendMessage {
     width: 100%;
     margin: auto;
     margin-top: 7%;
     margin-bottom: 7%;
 }
-#discInput
-{
+
+#discInput {
     margin-top: 7%;
     border: 1px solid grey;
     border-radius: 5px 5px 5px 5px;
     text-align: left;
     font-size: 15px;
 }
-#rowCollapsesWali
-{
+
+#rowCollapsesWali {
     margin-top: 2%;
     margin-bottom: 2%;
     border: 1px solid black;
     font-size: 15px;
 }
+
 .priceTitleColumn {
     font-size: 21px;
 }
@@ -116,6 +122,7 @@
 #contactColumn {
     border: 0px solid black;
     margin-top: 1%;
+    padding-left: 2%;
 }
 
 #heart3 {
@@ -156,10 +163,62 @@
 }
 
 #RowDetailsOfData {
-    width: 85%;
+    width: 82%;
     margin: auto;
 }
-
+/* ///////////////////////////////////////////////// */
+.titleBondCalculator
+{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.rightrowInsideLeftColBond
+{
+    display: flex;
+    /* border-bottom:1px solid #0d63c9; */
+    /* border: 1px solid rgb(143, 143, 143); */
+    padding-top: 3%;
+}
+.rightrowInsideRightColBond
+{
+    display: flex;
+    /* border: 1px solid blue; */
+    border-bottom:1px solid rgb(131, 131, 131);
+    width: 100%;
+    padding-top: 3%;
+}
+.purchasePrice
+{
+    font-weight: lighter;
+    font-size: 12px;
+    padding-top: 3%;
+    margin-left: 1%;
+    width: fit-content;
+}
+.priceInsideTheRightBond
+{
+    padding-left:40%;
+}
+.priceInsideTheRightBondSmall
+{
+    padding-left:45%;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: right;
+}
+.priceInsideTheLeftBond
+{
+    padding-left: 35%;
+    border-bottom: 1px solid #0d63c9;
+    text-align: right;
+    
+}
+/* #rowBondCalculator
+{
+    display: none;
+} */
+/* ///////////////////////////////////////////////// */
 /* For media queries */
 
 @media all and (max-width:1270px) {
@@ -185,10 +244,8 @@ margin: auto;
     }
 }
 
-
 @media all and (max-width:990px) {
-    #contactColumn
-    {
+    #contactColumn {
         width: 100%;
     }
 }
@@ -224,6 +281,10 @@ margin: auto;
     #heart3 {
         padding-left: 15%;
     }
+    #contactColumn {
+      
+        padding-left: 3%;
+    }
 }
 
 @media all and (max-width:388px) {
@@ -235,21 +296,21 @@ margin: auto;
 
 @media all and (max-width:368px) {
     #heart3 {
-      
         right: 10%;
     }
 }
 
 @media all and (max-width:352px) {
     #heart3 {
-        
         right: 10%;
+    }
+    #contactColumn {    
+        padding-left: 4%;
     }
 }
 
 @media all and (max-width:342px) {
     #heart3 {
-  
         right: 12%;
     }
 }

@@ -4,7 +4,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import { AiFillFacebook, AiFillApple, AiFillAndroid, AiFillHeart, AiOutlineCar, AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { FaTwitterSquare, FaPinterestSquare, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { BiBed, BiLeftArrow } from 'react-icons/bi';
-import { RiArrowDownSLine,RiParkingBoxLine } from 'react-icons/ri';
+import { RiArrowDownSLine, RiParkingBoxLine } from 'react-icons/ri';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { BsSquare } from 'react-icons/bs';
 import '../Styling/AdDetails.css';
@@ -17,14 +17,14 @@ import SlideShow from './SlideShow';
 const AdDetails = () => {
     return (
         <div>
-    
+
             <Header />
             {/* this is the top navigation upper to the slide show */}
-            
+
             <div id="topNav">
                 <div id="topNavText">
                     <div id="lhistory">
-                    <Link className="history"> <AiOutlineArrowLeft /> Back to Results </Link>
+                        <Link className="history"> <AiOutlineArrowLeft /> Back to Results </Link>
                     </div>
                     <div id="hideIt">
                         <Link className="history"> Property for Sale </Link>
@@ -34,12 +34,12 @@ const AdDetails = () => {
                         <Link className="history"> <AiOutlineArrowRight /> 105446339 </Link>
                     </div>
                     <div id="rhistory">
-                    <Link className="history"> Move to Next <AiOutlineArrowRight /> </Link>
+                        <Link className="history"> Move to Next <AiOutlineArrowRight /> </Link>
                     </div>
                 </div>
             </div>
-           
-            
+
+
             {/* this is the top navigation upper to the slide show */}
             <SlideShow />
 
@@ -49,14 +49,14 @@ const AdDetails = () => {
                 <MDBRow id="RowDetailsOfData">
                     <MDBCol className="titleColumn" md="12" lg="9">
                         <MDBRow className="titleRowInsideCol">
-                            <div style={{ display: "flex",paddingTop:"2%" }}>
+                            <div style={{ display: "flex", paddingTop: "2%" }}>
                                 <h3 className="text-primary priceTitleColumn">R 899 000</h3>
                                 <Link to="/details" className="text-primary textTitleColumn">  Bond Costs <RiArrowDownSLine /> </Link>
                                 <div id="heart3">
                                     <AiFillHeart />
                                 </div>
                             </div>
-                            <h5 style={{fontSize:"20px",fontWeight:"lighter"}}>3 Bedroom Apartment / Flat for Sale in Eden Glen</h5>
+                            <h5 style={{ fontSize: "20px", fontWeight: "lighter" }}>3 Bedroom Apartment / Flat for Sale in Eden Glen</h5>
                             <p className="text-primary textSmall">36 Eden Village, 999 Harris Avenue, Eden Glen, Edenvale</p>
                             <div style={{ display: "flex" }}>
                                 <div style={{ display: "flex" }}> <p className="things2"> <AiOutlineCar /> </p> <span className="thingsText2">2</span></div>
@@ -77,6 +77,7 @@ const AdDetails = () => {
                             </div>
                         </MDBRow>
                         <MDBRow className='titleRowInsideCol' id="rowCollapsesWali">
+
                             <p
                                 className="text-dark bg-transparent"
                                 type="button"
@@ -318,13 +319,76 @@ const AdDetails = () => {
                                 </table>
                             </div>
                         </MDBRow>
+                        <MDBRow className="titleRowInsideCol" id="rowBondCalculator">
+                            <h2 className="titleBondCalculator">Bond Calculator</h2>
+                            <MDBRow>
+                                <MDBCol md="6">
+                                    <div className="rightrowInsideLeftColBond">
+                                        <h5 className="purchasePrice">Purchase Price</h5>
+                                        <div style={{ marginLeft: "5%" }} class="form-outline">
+                                            <input type="text" id="formControlDefault" placeholder="20000" class="form-control" />
+                                            <label class="form-label" for="formControlDefault"><b style={{ color: "#0d63c9" }}>R</b></label>
+                                        </div>
+                                    </div>
+                                    <div className="rightrowInsideLeftColBond">
+                                        <h5 className="purchasePrice">Deposit (Optional)</h5>
+                                        <div style={{ marginLeft: "0%" }} class="form-outline">
+                                            <input type="text" id="formControlDefault" placeholder="10000" class="form-control" />
+                                            <label class="form-label" for="formControlDefault"><b style={{ color: "#0d63c9" }}>R</b></label>
+                                        </div>
+                                    </div>
+                                    <div className="rightrowInsideLeftColBond">
+                                        <h5 className="purchasePrice">Interest Rate</h5>
+                                        <div style={{ marginLeft: "9%" }} class="form-outline">
+                                            <input type="text" id="formControlDefault" placeholder="percentage here" class="form-control" />
+                                            <label class="form-label" for="formControlDefault"><b style={{ color: "#0d63c9" }}>%</b></label>
+                                        </div>
+                                    </div>
+                                    <div className="rightrowInsideLeftColBond">
+                                        <h5 className="purchasePrice">Loan Term</h5>
+
+                                    </div>
+
+                                    <div className="rightrowInsideLeftColBond">
+                                        <div style={{ width: "90%", marginLeft: "5%", paddingTop: "2%", paddingBottom: "2%" }}>
+                                            <input style={{ width: "100%" }} type="range" id="volume" title="10%" name="volume"
+                                                min="0" max="100" />
+
+                                        </div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </MDBCol>
+                                <MDBCol md="6">
+                                    <div className="rightrowInsideRightColBond">
+                                        <h5 className="purchasePrice">Monthly Repayment:</h5>
+                                        <h5 className="priceInsideTheRightBond">R 5 752</h5>
+                                    </div>
+                                    <div className="rightrowInsideRightColBond">
+                                        <h5 className="purchasePrice">Total Once-off Costs:</h5>
+                                        <h5 className="priceInsideTheRightBondSmall">R 23 739</h5>
+                                    </div>
+                                    <div className="rightrowInsideRightColBond">
+                                        <h5 className="purchasePrice">Min Gross Monthly Income:</h5>
+                                        <h5 className="priceInsideTheRightBondSmall">R 0</h5>
+                                    </div>
+                                    <button className="btn btn-primary btn-block" style={{ width: "100%", marginTop: "5%" }}>View Breakdown</button>
+                                    <div style={{marginTop:"4%",marginBottom:"2%"}}>
+                                    <Link style={{fontSize:"14px",marginTop:"10px"}}>What do I qualify for based on my income?</Link><br/>
+                                    <Link style={{fontSize:"14px",marginTop:"10px"}}>What are the bond and transfer costs?</Link>
+                                    </div>
+                                </MDBCol>
+                                <p style={{fontSize:"10px"}}>*Disclaimer: Please note that by default this calculator uses the prime interest rate for bond payment calculations. This is purely for convenience and not an indication of the interest rate that might be offered to you by a bank. This calculator is intended to provide estimates based on the indicated amounts, rates and fees. Whilst we make every effort to ensure the accuracy of these calculations, we cannot be held liable for inaccuracies. Property24 does not accept liability for any damages arising from the use of this calculator.</p>
+                            </MDBRow>
+                        </MDBRow>
 
                     </MDBCol>
                     <MDBCol id="contactColumn" md="1" lg="3">
                         <MDBRow className="titleRowInsideCol">
                             <div style={{ textAlign: "center" }}>
                                 <h5 className="contactAgent">Contact Agent</h5>
-                                <h6 className="showContact"> <span style={{ color: "green", fontSize: "25px",paddingRight:"2%" }}><IoLogoWhatsapp /></span> Show Contact Number</h6>
+                                <h6 className="showContact"> <span style={{ color: "green", fontSize: "25px", paddingRight: "2%" }}><IoLogoWhatsapp /></span> Show Contact Number</h6>
 
                                 <input type="text" id="nameInput" placeholder="Your Name" class="form-control" />
 
@@ -340,7 +404,7 @@ const AdDetails = () => {
 
                             </div>
                         </MDBRow>
-                        <MDBRow style={{textAlign:"center"}} className="titleRowInsideCol">
+                        <MDBRow style={{ textAlign: "center", marginBottom: "4%" }} className="titleRowInsideCol">
                             <img src="https://images.prop24.com/138491254/Fit450x225" alt="" />
                             <p className="textTitleColumn">Henrene Properties (PTY) Ltd</p>
                             <p className="text-primary textTitleColumn">View all properties for sale</p>
